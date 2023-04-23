@@ -15,6 +15,7 @@
 		4A76BC2E29F4788E00DD3ACE /* ScrumdingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC2D29F4788E00DD3ACE /* ScrumdingerUITests.swift */; };
 		4A76BC3029F4788E00DD3ACE /* ScrumdingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC2F29F4788E00DD3ACE /* ScrumdingerUITestsLaunchTests.swift */; };
 		4A76BC3F29F5712600DD3ACE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC3E29F5712600DD3ACE /* Theme.swift */; };
+		4A76BC4129F573DA00DD3ACE /* DailyWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC4029F573DA00DD3ACE /* DailyWorkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4A76BC2D29F4788E00DD3ACE /* ScrumdingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITests.swift; sourceTree = "<group>"; };
 		4A76BC2F29F4788E00DD3ACE /* ScrumdingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4A76BC3E29F5712600DD3ACE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		4A76BC4029F573DA00DD3ACE /* DailyWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				4A76BC3E29F5712600DD3ACE /* Theme.swift */,
+				4A76BC4029F573DA00DD3ACE /* DailyWorkout.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				4A76BC3F29F5712600DD3ACE /* Theme.swift in Sources */,
 				4A76BC1429F4788D00DD3ACE /* WorkoutSessionScreen.swift in Sources */,
 				4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */,
+				4A76BC4129F573DA00DD3ACE /* DailyWorkout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +458,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev.Scrumdinger.Scrumdinger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -492,7 +496,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev.Scrumdinger.Scrumdinger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbornedev.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MeetingView: View {
+struct WorkoutSessionScreen: View {
     var body: some View {
         VStack {
             Circle()
@@ -48,6 +48,6 @@ struct MeetingView: View {
 }
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
-        MeetingView()
+        WorkoutSessionScreen()
     }
 }

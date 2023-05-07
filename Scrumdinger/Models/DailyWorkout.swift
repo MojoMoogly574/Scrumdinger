@@ -13,6 +13,14 @@ struct DailyWorkout: Identifiable {
         var title: String
         var exercises: [Exercise]
         var lengthInMinutes: Int
+        var lengthInMinutesAsDouble: Double {
+            get {
+                Double(lengthInMinutes)
+            }
+            set {
+                lengthInMinutes = Int(newValue)
+            }
+       }
         var theme: Theme
     
     init(id: UUID = UUID(), title: String, exercises: [String], lengthInMinutes: Int, theme: Theme) {
@@ -20,6 +28,7 @@ struct DailyWorkout: Identifiable {
             self.title = title
             self.exercises = exercises.map  { Exercise(name: $0) }
             self.lengthInMinutes = lengthInMinutes
+        
             self.theme = theme
         }
     }
@@ -33,7 +42,12 @@ extension DailyWorkout {
                     self.name = name
                 }
             }
-        }
+        
+static var emptyWorkout: DailyWorkout {
+       DailyWorkout(title: "", exercises: [], lengthInMinutes: 5, theme: .sky)
+   }
+}
+
 //MARK:  SAMPLE DATA
 extension DailyWorkout {
     static let sampleData: [DailyWorkout] =

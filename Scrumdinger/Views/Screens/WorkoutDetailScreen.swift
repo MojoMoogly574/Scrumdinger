@@ -10,13 +10,14 @@ import SwiftUI
 struct WorkoutDetailScreen: View {
     //Mark:  PROPERTIES
     let workout:  DailyWorkout
+    @State private var isPresentingEditWorkoutScreen = false
     
     
     var body: some View {
         List {
             Section(header: Text("Workout Info")) {
-            NavigationLink(destination: WorkoutSessionScreen()) {
-                
+                NavigationLink(destination: WorkoutSessionScreen()) {
+                    
                     Label("Start Workout", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
@@ -47,9 +48,32 @@ struct WorkoutDetailScreen: View {
             }
             
         }
+        .navigationTitle(workout.title)
+        .toolbar {
+            Button("Edit") {
+                isPresentingEditWorkoutScreen  = true
+            }
+        }
+        .sheet(isPresented: $isPresentingEditWorkoutScreen) {
+            NavigationStack {
+                EditWorkoutScreen()
+                    .navigationTitle(workout.title)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isPresentingEditWorkoutScreen = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                isPresentingEditWorkoutScreen = false
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
-
 struct WorkoutDetailScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {

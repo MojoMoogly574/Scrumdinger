@@ -36,5 +36,7 @@ var accentColor: Color {
     var mainColor: Color {
             Color(rawValue)
         }
+    var name: String {
+            rawValue.capitalized
+        }
     }
-

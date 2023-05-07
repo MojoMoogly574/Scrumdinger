@@ -11,19 +11,29 @@ import Foundation
 struct DailyWorkout: Identifiable {
         let id: UUID
         var title: String
-        var exercises: [String]
+        var exercises: [Exercise]
         var lengthInMinutes: Int
         var theme: Theme
     
     init(id: UUID = UUID(), title: String, exercises: [String], lengthInMinutes: Int, theme: Theme) {
             self.id = id
             self.title = title
-            self.exercises = exercises
+            self.exercises = exercises.map  { Exercise(name: $0) }
             self.lengthInMinutes = lengthInMinutes
             self.theme = theme
         }
     }
-
+extension DailyWorkout {
+    struct Exercise: Identifiable {
+        let id: UUID
+                var name: String
+                
+                init(id: UUID = UUID(), name: String) {
+                    self.id = id
+                    self.name = name
+                }
+            }
+        }
 //MARK:  SAMPLE DATA
 extension DailyWorkout {
     static let sampleData: [DailyWorkout] =

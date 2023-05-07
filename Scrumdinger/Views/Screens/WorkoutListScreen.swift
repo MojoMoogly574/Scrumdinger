@@ -16,7 +16,7 @@ struct WorkoutListScreen: View {
         
         NavigationStack {
             List(workouts) { workout in
-                NavigationLink(destination: Text(workout.title)) {
+                NavigationLink(destination: WorkoutDetailScreen(workout: workout)) {
                     WorkoutCardView(workout: workout)
                 }
                         .listRowBackground(workout.theme.mainColor)
@@ -28,9 +28,11 @@ struct WorkoutListScreen: View {
                     
                 }) {
                    Text("Add Workout")
+                       
                 }
                 .accessibilityLabel("New Workout")
             }
+          
         }
         
         }

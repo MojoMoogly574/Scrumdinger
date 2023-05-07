@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */; };
 		4A76BC1429F4788D00DD3ACE /* WorkoutSessionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */; };
-		4A76BC1629F4788E00DD3ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A76BC1529F4788E00DD3ACE /* Assets.xcassets */; };
 		4A76BC1A29F4788E00DD3ACE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A76BC1929F4788E00DD3ACE /* Preview Assets.xcassets */; };
 		4A76BC2429F4788E00DD3ACE /* ScrumdingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC2329F4788E00DD3ACE /* ScrumdingerTests.swift */; };
 		4A76BC2E29F4788E00DD3ACE /* ScrumdingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC2D29F4788E00DD3ACE /* ScrumdingerUITests.swift */; };
@@ -18,6 +17,8 @@
 		4A76BC4129F573DA00DD3ACE /* DailyWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC4029F573DA00DD3ACE /* DailyWorkout.swift */; };
 		4A76BC4329F57AA500DD3ACE /* WorkoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC4229F57AA500DD3ACE /* WorkoutCardView.swift */; };
 		4A76BC4629F57EAE00DD3ACE /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC4529F57EAE00DD3ACE /* TrailingIconLabelStyle.swift */; };
+		4A76BC4829F5AD7400DD3ACE /* WorkoutListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC4729F5AD7400DD3ACE /* WorkoutListScreen.swift */; };
+		4A76BC4A29F5B6CF00DD3ACE /* Asset Catalog.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A76BC4929F5B6CF00DD3ACE /* Asset Catalog.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		4A76BC0E29F4788D00DD3ACE /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSessionScreen.swift; sourceTree = "<group>"; };
-		4A76BC1529F4788E00DD3ACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A76BC1729F4788E00DD3ACE /* Scrumdinger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scrumdinger.entitlements; sourceTree = "<group>"; };
 		4A76BC1929F4788E00DD3ACE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A76BC1F29F4788E00DD3ACE /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +53,8 @@
 		4A76BC4029F573DA00DD3ACE /* DailyWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkout.swift; sourceTree = "<group>"; };
 		4A76BC4229F57AA500DD3ACE /* WorkoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardView.swift; sourceTree = "<group>"; };
 		4A76BC4529F57EAE00DD3ACE /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		4A76BC4729F5AD7400DD3ACE /* WorkoutListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListScreen.swift; sourceTree = "<group>"; };
+		4A76BC4929F5B6CF00DD3ACE /* Asset Catalog.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Asset Catalog.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +108,8 @@
 				4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */,
 				4A76BC3D29F5710B00DD3ACE /* Models */,
 				4A76BC4429F57AAB00DD3ACE /* Views */,
-				4A76BC1529F4788E00DD3ACE /* Assets.xcassets */,
 				4A76BC1729F4788E00DD3ACE /* Scrumdinger.entitlements */,
+				4A76BC4929F5B6CF00DD3ACE /* Asset Catalog.xcassets */,
 				4A76BC1829F4788E00DD3ACE /* Preview Content */,
 			);
 			path = Scrumdinger;
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */,
+				4A76BC4729F5AD7400DD3ACE /* WorkoutListScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -270,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A76BC1A29F4788E00DD3ACE /* Preview Assets.xcassets in Resources */,
-				4A76BC1629F4788E00DD3ACE /* Assets.xcassets in Resources */,
+				4A76BC4A29F5B6CF00DD3ACE /* Asset Catalog.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +300,7 @@
 			files = (
 				4A76BC3F29F5712600DD3ACE /* Theme.swift in Sources */,
 				4A76BC4629F57EAE00DD3ACE /* TrailingIconLabelStyle.swift in Sources */,
+				4A76BC4829F5AD7400DD3ACE /* WorkoutListScreen.swift in Sources */,
 				4A76BC1429F4788D00DD3ACE /* WorkoutSessionScreen.swift in Sources */,
 				4A76BC4329F57AA500DD3ACE /* WorkoutCardView.swift in Sources */,
 				4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */,

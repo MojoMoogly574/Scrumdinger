@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A5DD80A2A08151C00C5BD55 /* WorkoutDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8092A08151C00C5BD55 /* WorkoutDetailScreen.swift */; };
 		4A5DD80E2A082D4900C5BD55 /* EditWorkoutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD80D2A082D4900C5BD55 /* EditWorkoutScreen.swift */; };
+		4A5DD8102A0872B400C5BD55 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD80F2A0872B400C5BD55 /* ThemeView.swift */; };
+		4A5DD8122A0873A600C5BD55 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8112A0873A600C5BD55 /* ThemePicker.swift */; };
 		4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */; };
 		4A76BC1429F4788D00DD3ACE /* WorkoutSessionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */; };
 		4A76BC1A29F4788E00DD3ACE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A76BC1929F4788E00DD3ACE /* Preview Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		4A5DD8092A08151C00C5BD55 /* WorkoutDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailScreen.swift; sourceTree = "<group>"; };
 		4A5DD80D2A082D4900C5BD55 /* EditWorkoutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWorkoutScreen.swift; sourceTree = "<group>"; };
+		4A5DD80F2A0872B400C5BD55 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		4A5DD8112A0873A600C5BD55 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		4A76BC0E29F4788D00DD3ACE /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSessionScreen.swift; sourceTree = "<group>"; };
@@ -168,7 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				4A76BC4229F57AA500DD3ACE /* WorkoutCardView.swift */,
+				4A5DD80F2A0872B400C5BD55 /* ThemeView.swift */,
 				4A76BC4529F57EAE00DD3ACE /* TrailingIconLabelStyle.swift */,
+				4A5DD8112A0873A600C5BD55 /* ThemePicker.swift */,
 				4A76BC3C29F5705800DD3ACE /* Screens */,
 			);
 			path = Views;
@@ -308,10 +314,12 @@
 				4A76BC4629F57EAE00DD3ACE /* TrailingIconLabelStyle.swift in Sources */,
 				4A5DD80A2A08151C00C5BD55 /* WorkoutDetailScreen.swift in Sources */,
 				4A76BC4829F5AD7400DD3ACE /* WorkoutListScreen.swift in Sources */,
+				4A5DD8122A0873A600C5BD55 /* ThemePicker.swift in Sources */,
 				4A76BC1429F4788D00DD3ACE /* WorkoutSessionScreen.swift in Sources */,
 				4A5DD80E2A082D4900C5BD55 /* EditWorkoutScreen.swift in Sources */,
 				4A76BC4329F57AA500DD3ACE /* WorkoutCardView.swift in Sources */,
 				4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */,
+				4A5DD8102A0872B400C5BD55 /* ThemeView.swift in Sources */,
 				4A76BC4129F573DA00DD3ACE /* DailyWorkout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

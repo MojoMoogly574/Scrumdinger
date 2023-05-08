@@ -9,14 +9,14 @@ import SwiftUI
 
 struct WorkoutListScreen: View {
     //MARK:  PROPERTIES
-    let workouts: [DailyWorkout]
+    @Binding var workouts: [DailyWorkout]
     
     
     var body: some View {
         
         NavigationStack {
-            List(workouts) { workout in
-                NavigationLink(destination: WorkoutDetailScreen(workout: workout)) {
+            List($workouts) { $workout in
+                NavigationLink(destination: WorkoutDetailScreen(workout: $workout)) {
                     WorkoutCardView(workout: workout)
                 }
                         .listRowBackground(workout.theme.mainColor)
@@ -39,8 +39,3 @@ struct WorkoutListScreen: View {
        
     }
 
-struct WorkoutListScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        WorkoutListScreen(workouts: DailyWorkout.sampleData)
-    }
-}

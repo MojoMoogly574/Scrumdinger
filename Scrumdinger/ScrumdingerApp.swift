@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ScrumdingerApp: App {
+    @State private var workouts = DailyWorkout.sampleData
+    
     var body: some Scene {
         WindowGroup {
-            WorkoutListScreen(workouts: DailyWorkout.sampleData)
+            WorkoutListScreen(workouts: $workouts)
         }
     }
 }

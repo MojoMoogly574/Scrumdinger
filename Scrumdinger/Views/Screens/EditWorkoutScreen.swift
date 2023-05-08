@@ -9,10 +9,10 @@ import SwiftUI
 
 struct EditWorkoutScreen: View {
     //MARK:  PROPERTIES
-    @State private var workout = DailyWorkout.emptyWorkout
+
     @State private var newExerciseName = ""
     
-    
+    @Binding var workout:  DailyWorkout
     
     var body: some View {
         Form {
@@ -27,8 +27,8 @@ struct EditWorkoutScreen: View {
                     Text("\(workout.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $workout.theme)
             }
-            
             Section(header:  Text("Exercises")) {
                 ForEach(workout.exercises) { exercise in
                     Text(exercise.name)
@@ -54,8 +54,8 @@ struct EditWorkoutScreen: View {
                         }
                     }
              
-struct EditWorkoutScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        EditWorkoutScreen()
-    }
-}
+//struct EditWorkoutScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EditWorkoutScreen(workout: workout)
+//    }
+//}

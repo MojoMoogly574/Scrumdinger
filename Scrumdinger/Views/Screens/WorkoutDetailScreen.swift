@@ -9,9 +9,9 @@ import SwiftUI
 
 struct WorkoutDetailScreen: View {
     //Mark:  PROPERTIES
-    let workout:  DailyWorkout
+    @Binding var workout:  DailyWorkout
     @State private var isPresentingEditWorkoutScreen = false
-    
+    @State private var editingWorkout = DailyWorkout.emptyWorkout
     
     var body: some View {
         List {
@@ -35,7 +35,7 @@ struct WorkoutDetailScreen: View {
                         .padding(4)
                         .foregroundColor(workout.theme.accentColor)
                         .background(workout.theme.mainColor)
-                        .cornerRadius(4)
+                        .cornerRadius(10)
                 }
                 .accessibilityElement(children: .combine)
                 
@@ -52,11 +52,12 @@ struct WorkoutDetailScreen: View {
         .toolbar {
             Button("Edit") {
                 isPresentingEditWorkoutScreen  = true
+                editingWorkout = workout
             }
         }
         .sheet(isPresented: $isPresentingEditWorkoutScreen) {
             NavigationStack {
-                EditWorkoutScreen()
+                EditWorkoutScreen(workout: $editingWorkout)
                     .navigationTitle(workout.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -67,6 +68,7 @@ struct WorkoutDetailScreen: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresentingEditWorkoutScreen = false
+                                workout = editingWorkout
                             }
                         }
                     }
@@ -77,7 +79,7 @@ struct WorkoutDetailScreen: View {
 struct WorkoutDetailScreen_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            WorkoutDetailScreen(workout: DailyWorkout.sampleData[0])
+            WorkoutDetailScreen(workout: .constant(DailyWorkout.sampleData[0]))
         }
     }
 }

@@ -46,7 +46,17 @@ struct WorkoutDetailScreen: View {
                 }
                 
             }
-            
+            Section(header: Text("Workout History")) {
+                if workout.history.isEmpty {
+                    Label("No Recorded Workouts", systemImage: "calendar.badge.exclamationmark")
+                }
+                ForEach(workout.history)    { history in
+                    HStack {
+                                            Image(systemName: "calendar")
+                                            Text(history.date, style: .date)
+                                        }
+                }
+            }
         }
         .navigationTitle(workout.title)
         .toolbar {

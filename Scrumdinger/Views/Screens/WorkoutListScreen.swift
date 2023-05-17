@@ -33,6 +33,7 @@ struct WorkoutListScreen: View {
                 .accessibilityLabel("New Workout")
             }
             .sheet(isPresented: $isPresentingNewWorkoutView) {
+                NewWorkoutSheet(workouts: $workouts, isPresentingNewWorkoutView: $isPresentingNewWorkoutView)
                     }
         }
         

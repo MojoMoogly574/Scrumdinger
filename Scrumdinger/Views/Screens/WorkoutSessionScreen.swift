@@ -32,16 +32,13 @@ struct WorkoutSessionScreen: View {
         .padding()
         .foregroundColor(workout.theme.accentColor)
         .onAppear {
-                    workoutTimer.reset(lengthInMinutes: workout.lengthInMinutes, exercises: workout.exercises)
-            workoutTimer.speakerChangedAction = {
-//                player.seek(to: .zero)
-//                                player.play()
                 
-            }
                     workoutTimer.startWorkout()
                 }
         .onDisappear{
             workoutTimer.stopWorkout()
+            let newHistory = History(exercises: workout.exercises)
+                        workout.history.insert(newHistory, at: 0)
         }
         .navigationBarTitleDisplayMode(.inline)
         

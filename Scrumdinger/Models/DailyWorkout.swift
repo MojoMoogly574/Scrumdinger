@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct DailyWorkout: Identifiable {
+struct DailyWorkout: Identifiable, Codable {
         let id: UUID
         var title: String
         var exercises: [Exercise]
@@ -29,12 +29,11 @@ struct DailyWorkout: Identifiable {
             self.title = title
             self.exercises = exercises.map  { Exercise(name: $0) }
             self.lengthInMinutes = lengthInMinutes
-        
             self.theme = theme
         }
     }
-extension DailyWorkout {
-    struct Exercise: Identifiable {
+extension DailyWorkout{
+    struct Exercise: Identifiable, Codable {
         let id: UUID
                 var name: String
                 

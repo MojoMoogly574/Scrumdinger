@@ -16,7 +16,7 @@ struct WorkoutDetailScreen: View {
     var body: some View {
         List {
             Section(header: Text("Workout Info")) {
-                NavigationLink(destination: WorkoutSessionScreen(workout: $workout)) {
+                NavigationLink(destination: WorkoutView(workout: $workout)) {
                     
                     Label("Start Workout", systemImage: "timer")
                         .font(.headline)

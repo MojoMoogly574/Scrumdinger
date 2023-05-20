@@ -16,8 +16,13 @@
 		4A5DD8182A09EFA800C5BD55 /* WorkoutFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8172A09EFA800C5BD55 /* WorkoutFooterView.swift */; };
 		4A5DD81C2A145FB600C5BD55 /* NewWorkoutSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD81B2A145FB600C5BD55 /* NewWorkoutSheet.swift */; };
 		4A5DD81E2A1463A100C5BD55 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD81D2A1463A100C5BD55 /* History.swift */; };
+		4A5DD8202A185DF800C5BD55 /* WorkoutStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD81F2A185DF800C5BD55 /* WorkoutStore.swift */; };
+		4A5DD8222A194D5600C5BD55 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8212A194D5600C5BD55 /* ErrorWrapper.swift */; };
+		4A5DD8242A194DB100C5BD55 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8232A194DB100C5BD55 /* ErrorView.swift */; };
+		4A5DD8262A19510300C5BD55 /* WorkoutTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8252A19510300C5BD55 /* WorkoutTimerView.swift */; };
+		4A5DD8282A19558D00C5BD55 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8272A19558D00C5BD55 /* SpeakerArc.swift */; };
 		4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */; };
-		4A76BC1429F4788D00DD3ACE /* WorkoutSessionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */; };
+		4A76BC1429F4788D00DD3ACE /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1329F4788D00DD3ACE /* WorkoutView.swift */; };
 		4A76BC1A29F4788E00DD3ACE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A76BC1929F4788E00DD3ACE /* Preview Assets.xcassets */; };
 		4A76BC2429F4788E00DD3ACE /* ScrumdingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC2329F4788E00DD3ACE /* ScrumdingerTests.swift */; };
 		4A76BC2E29F4788E00DD3ACE /* ScrumdingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC2D29F4788E00DD3ACE /* ScrumdingerUITests.swift */; };
@@ -57,9 +62,14 @@
 		4A5DD8172A09EFA800C5BD55 /* WorkoutFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFooterView.swift; sourceTree = "<group>"; };
 		4A5DD81B2A145FB600C5BD55 /* NewWorkoutSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutSheet.swift; sourceTree = "<group>"; };
 		4A5DD81D2A1463A100C5BD55 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		4A5DD81F2A185DF800C5BD55 /* WorkoutStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutStore.swift; sourceTree = "<group>"; };
+		4A5DD8212A194D5600C5BD55 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		4A5DD8232A194DB100C5BD55 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		4A5DD8252A19510300C5BD55 /* WorkoutTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerView.swift; sourceTree = "<group>"; };
+		4A5DD8272A19558D00C5BD55 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 		4A76BC0E29F4788D00DD3ACE /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
-		4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSessionScreen.swift; sourceTree = "<group>"; };
+		4A76BC1329F4788D00DD3ACE /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		4A76BC1729F4788E00DD3ACE /* Scrumdinger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scrumdinger.entitlements; sourceTree = "<group>"; };
 		4A76BC1929F4788E00DD3ACE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A76BC1F29F4788E00DD3ACE /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +171,6 @@
 		4A76BC3C29F5705800DD3ACE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4A76BC1329F4788D00DD3ACE /* WorkoutSessionScreen.swift */,
 				4A76BC4729F5AD7400DD3ACE /* WorkoutListScreen.swift */,
 				4A5DD8092A08151C00C5BD55 /* WorkoutDetailScreen.swift */,
 				4A5DD80D2A082D4900C5BD55 /* EditWorkoutScreen.swift */,
@@ -176,6 +185,8 @@
 				4A76BC4029F573DA00DD3ACE /* DailyWorkout.swift */,
 				4A5DD8152A08920800C5BD55 /* WorkoutTimer.swift */,
 				4A5DD81D2A1463A100C5BD55 /* History.swift */,
+				4A5DD81F2A185DF800C5BD55 /* WorkoutStore.swift */,
+				4A5DD8212A194D5600C5BD55 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,11 +197,15 @@
 				4A76BC4229F57AA500DD3ACE /* WorkoutCardView.swift */,
 				4A5DD80F2A0872B400C5BD55 /* ThemeView.swift */,
 				4A76BC4529F57EAE00DD3ACE /* TrailingIconLabelStyle.swift */,
+				4A76BC1329F4788D00DD3ACE /* WorkoutView.swift */,
+				4A5DD8232A194DB100C5BD55 /* ErrorView.swift */,
 				4A5DD8112A0873A600C5BD55 /* ThemePicker.swift */,
 				4A5DD8132A088F5300C5BD55 /* WorkoutHeaderView.swift */,
 				4A5DD8172A09EFA800C5BD55 /* WorkoutFooterView.swift */,
+				4A5DD8252A19510300C5BD55 /* WorkoutTimerView.swift */,
 				4A5DD81B2A145FB600C5BD55 /* NewWorkoutSheet.swift */,
 				4A76BC3C29F5705800DD3ACE /* Screens */,
+				4A5DD8272A19558D00C5BD55 /* SpeakerArc.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,15 +342,20 @@
 			files = (
 				4A76BC3F29F5712600DD3ACE /* Theme.swift in Sources */,
 				4A76BC4629F57EAE00DD3ACE /* TrailingIconLabelStyle.swift in Sources */,
+				4A5DD8242A194DB100C5BD55 /* ErrorView.swift in Sources */,
+				4A5DD8202A185DF800C5BD55 /* WorkoutStore.swift in Sources */,
+				4A5DD8262A19510300C5BD55 /* WorkoutTimerView.swift in Sources */,
 				4A5DD81C2A145FB600C5BD55 /* NewWorkoutSheet.swift in Sources */,
 				4A5DD80A2A08151C00C5BD55 /* WorkoutDetailScreen.swift in Sources */,
 				4A76BC4829F5AD7400DD3ACE /* WorkoutListScreen.swift in Sources */,
 				4A5DD8122A0873A600C5BD55 /* ThemePicker.swift in Sources */,
 				4A5DD8162A08920800C5BD55 /* WorkoutTimer.swift in Sources */,
-				4A76BC1429F4788D00DD3ACE /* WorkoutSessionScreen.swift in Sources */,
+				4A76BC1429F4788D00DD3ACE /* WorkoutView.swift in Sources */,
 				4A5DD80E2A082D4900C5BD55 /* EditWorkoutScreen.swift in Sources */,
+				4A5DD8282A19558D00C5BD55 /* SpeakerArc.swift in Sources */,
 				4A76BC4329F57AA500DD3ACE /* WorkoutCardView.swift in Sources */,
 				4A5DD81E2A1463A100C5BD55 /* History.swift in Sources */,
+				4A5DD8222A194D5600C5BD55 /* ErrorWrapper.swift in Sources */,
 				4A5DD8182A09EFA800C5BD55 /* WorkoutFooterView.swift in Sources */,
 				4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */,
 				4A5DD8142A088F5300C5BD55 /* WorkoutHeaderView.swift in Sources */,
@@ -499,6 +519,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Workout Coach";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -509,7 +531,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -537,6 +559,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Workout Coach";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -547,7 +571,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;

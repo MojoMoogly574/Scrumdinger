@@ -28,7 +28,7 @@ struct WorkoutHeaderView: View {
     var body: some View {
         VStack {
             ProgressView(value: progress)
-    
+                
             HStack {
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed")

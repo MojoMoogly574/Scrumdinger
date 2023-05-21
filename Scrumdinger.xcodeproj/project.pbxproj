@@ -21,6 +21,8 @@
 		4A5DD8242A194DB100C5BD55 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8232A194DB100C5BD55 /* ErrorView.swift */; };
 		4A5DD8262A19510300C5BD55 /* WorkoutTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8252A19510300C5BD55 /* WorkoutTimerView.swift */; };
 		4A5DD8282A19558D00C5BD55 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8272A19558D00C5BD55 /* SpeakerArc.swift */; };
+		4A5DD82A2A195FF700C5BD55 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD8292A195FF700C5BD55 /* SpeechRecognizer.swift */; };
+		4A5DD82C2A1961E400C5BD55 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5DD82B2A1961E400C5BD55 /* HistoryView.swift */; };
 		4A76BC1229F4788D00DD3ACE /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */; };
 		4A76BC1429F4788D00DD3ACE /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A76BC1329F4788D00DD3ACE /* WorkoutView.swift */; };
 		4A76BC1A29F4788E00DD3ACE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A76BC1929F4788E00DD3ACE /* Preview Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		4A5DD8232A194DB100C5BD55 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		4A5DD8252A19510300C5BD55 /* WorkoutTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerView.swift; sourceTree = "<group>"; };
 		4A5DD8272A19558D00C5BD55 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
+		4A5DD8292A195FF700C5BD55 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		4A5DD82B2A1961E400C5BD55 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		4A76BC0E29F4788D00DD3ACE /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A76BC1129F4788D00DD3ACE /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		4A76BC1329F4788D00DD3ACE /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				4A5DD81D2A1463A100C5BD55 /* History.swift */,
 				4A5DD81F2A185DF800C5BD55 /* WorkoutStore.swift */,
 				4A5DD8212A194D5600C5BD55 /* ErrorWrapper.swift */,
+				4A5DD8292A195FF700C5BD55 /* SpeechRecognizer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				4A5DD8132A088F5300C5BD55 /* WorkoutHeaderView.swift */,
 				4A5DD8172A09EFA800C5BD55 /* WorkoutFooterView.swift */,
 				4A5DD8252A19510300C5BD55 /* WorkoutTimerView.swift */,
+				4A5DD82B2A1961E400C5BD55 /* HistoryView.swift */,
 				4A5DD81B2A145FB600C5BD55 /* NewWorkoutSheet.swift */,
 				4A76BC3C29F5705800DD3ACE /* Screens */,
 				4A5DD8272A19558D00C5BD55 /* SpeakerArc.swift */,
@@ -353,6 +359,8 @@
 				4A76BC1429F4788D00DD3ACE /* WorkoutView.swift in Sources */,
 				4A5DD80E2A082D4900C5BD55 /* EditWorkoutScreen.swift in Sources */,
 				4A5DD8282A19558D00C5BD55 /* SpeakerArc.swift in Sources */,
+				4A5DD82C2A1961E400C5BD55 /* HistoryView.swift in Sources */,
+				4A5DD82A2A195FF700C5BD55 /* SpeechRecognizer.swift in Sources */,
 				4A76BC4329F57AA500DD3ACE /* WorkoutCardView.swift in Sources */,
 				4A5DD81E2A1463A100C5BD55 /* History.swift in Sources */,
 				4A5DD8222A194D5600C5BD55 /* ErrorWrapper.swift in Sources */,
@@ -519,8 +527,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Workout Coach";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the workout. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a trext transcript of your workout in the app.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -530,7 +538,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -559,8 +566,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Workout Coach";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the workout. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a trext transcript of your workout in the app.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -570,7 +577,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

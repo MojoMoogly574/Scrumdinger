@@ -11,10 +11,12 @@ struct History: Identifiable, Codable {
     let id: UUID
     let date: Date
     var exercises: [DailyWorkout.Exercise]
-
-    init(id: UUID = UUID(), date: Date = Date(), exercises: [DailyWorkout.Exercise]) {
-            self.id = id
-            self.date = date
-            self.exercises = exercises
-        }
+    var transcript: String?
+    
+    init(id: UUID = UUID(), date: Date = Date(), exercises: [DailyWorkout.Exercise], transcript: String? = nil) {
+        self.id = id
+        self.date = date
+        self.exercises = exercises
+        self.transcript = transcript
     }
+}

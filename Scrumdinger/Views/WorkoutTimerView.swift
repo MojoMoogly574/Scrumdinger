@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WorkoutTimerView: View {
     let speakers: [WorkoutTimer.Speaker]
+    let isRecording: Bool
     let theme: Theme
     
     private var currentSpeaker: String {
@@ -23,6 +24,10 @@ struct WorkoutTimerView: View {
                     Text(currentSpeaker)
                         .font(.title)
                     Text("current exercise")
+                    Image(systemName: isRecording ? "mic" : "mic.slash")
+                        .font(.title)
+                        .padding(.top)
+                        .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
                 }
                 .accessibilityElement(children: .combine)
                 .foregroundStyle(theme.accentColor)
@@ -46,6 +51,6 @@ struct WorkoutTimerView_Previews: PreviewProvider {
            [WorkoutTimer.Speaker(name: "Bill", isCompleted: true), WorkoutTimer.Speaker(name: "Cathy", isCompleted: false)]
        }
     static var previews: some View {
-        WorkoutTimerView(speakers: speakers, theme: .yellow)
+        WorkoutTimerView(speakers: speakers,isRecording: true, theme: .yellow)
     }
 }

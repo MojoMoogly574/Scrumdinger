@@ -13,6 +13,8 @@ struct WorkoutView: View {
     //MARK:  PROPERTIES
     @Binding var workout:  DailyWorkout
     @StateObject var workoutTimer = WorkoutTimer()
+    @StateObject var speechRecognizer = SpeechRecognizer()
+    @State private var isRecording = false
     
     //  private var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
@@ -22,7 +24,7 @@ struct WorkoutView: View {
                 .fill(workout.theme.mainColor)
             VStack {
                 WorkoutHeaderView(secondsElapsed: workoutTimer.secondsElapsed, secondsRemaining: workoutTimer.secondsRemaining, theme: workout.theme)
-                WorkoutTimerView(speakers: workoutTimer.speakers, theme: workout.theme)
+                WorkoutTimerView(speakers: workoutTimer.speakers, isRecording: isRecording, theme: workout.theme)
                 WorkoutFooterView(speakers: workoutTimer.speakers, skipAction: workoutTimer.skipSpeaker)
                 
                 }
@@ -44,11 +46,16 @@ private func startWorkout() {
 //           player.seek(to: .zero)
 //           player.play()
        }
+    speechRecognizer.resetTranscript()
+            speechRecognizer.startTranscribing()
+    isRecording = true
        workoutTimer.startWorkout()
    }
    
    private func endWorkout() {
        workoutTimer.stopWorkout()
+       speechRecognizer.stopTranscribing()
+       isRecording = false
        let newHistory = History(exercises: workout.exercises)
        workout.history.insert(newHistory, at: 0)
    }
